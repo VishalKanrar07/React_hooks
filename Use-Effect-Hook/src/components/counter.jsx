@@ -5,7 +5,7 @@ function Counter() {
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
 
-  useCustomEffect(() => {
+  useEffect(() => {
     console.log("Effect triggered:", count);
     return () => {
       console.log("cleanup");
